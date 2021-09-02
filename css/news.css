@@ -1,0 +1,180 @@
+
+.navbar {
+  padding: 0px 15px;
+  z-index: 999;
+  height: 60px;
+  background-color: #120136;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img {
+  max-height: 40px;
+}
+@media screen and (min-width: 768px) {
+  .navbar-collapse {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .navbar-btn {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding-top: 1rem;
+  }
+  #collapsibleNavbar {
+    border-top: 1px solid gray;
+  }
+}
+.privacy {
+  margin-top: 60px;
+  padding-bottom: 2px;
+}
+  /* HotNews */
+
+
+  .cont {
+    background-color: #242526;
+  }
+  #hot-news {
+    margin-top:60px;
+    display: flex;
+    flex:1;
+    /* border-bottom:1px solid #fff; */
+  }
+  #hot-news a {
+    text-decoration: none;
+  }
+  .main-news h2{
+    font-size: 27px;
+  }
+  #hot-news p{
+    font-size:15px;
+  }
+  .main-news{
+    display: flex;
+    flex:1;
+    margin-top: 20px;
+    padding-right: 20px;
+  }
+  .main-news img {
+    
+      width: 100%;
+      height: auto;
+    
+  }
+  .main-content{
+    color: white;
+  }
+  .side-news{
+    display: flex;
+    flex:1;
+    margin-top:20px;
+  }
+  .tab-pane p,
+  .side-news p{
+    margin-bottom: 0;
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+  }
+  .tab-pane img,
+  .side-news img{
+    
+    width: 100%;
+    height: auto;
+
+  }
+  .thumb-nail {
+    width: 40%;
+  }
+  .tab-pane a,
+  .side-news a {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  .tab-pane .title,
+  .side-news .title {
+    font-size: 20px;
+  }
+  .tab-pane .body,
+  .side-news .body {
+    margin-left: 10px;
+    color: white;
+    width: 50%;
+  }
+  .tab-pane p,
+  .body p{
+    text-overflow: ellipsis; 
+  }
+  
+  
+  
+  @media screen and (max-width: 991px){
+    #hot-news {
+      display:flex;
+      flex-direction: column;
+    }
+    .main-news {
+      padding-right:0;
+    }
+
+  }
+
+.category {
+  margin-bottom: 20px;
+
+}
+.tab-pane .thumb-nail {
+  width: 40%;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.tab-content {
+  display: flex;
+  flex:2;
+}
+.news-letter {
+  display: flex;
+  border:1px solid white;
+  height: 286px;
+  width: 230px;
+  background: #000 url('https://astronomy.com/sitefiles/images/newsletter-box-bg.png')right bottom no-repeat;
+
+}
+.box {
+  padding: 7px;
+}
+.box span,b{
+  color: white;
+}
+form .btn-submit{
+  margin-top: 10px;
+}
+.btn-submit {
+  background-color: #217fb5;
+  border: none;
+  color: white;
+
+}
+@media screen and (max-width:768px){
+  
+}
+@media screen and (max-width:991px){
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .news-letter{
+    width: 100%;
+    height: inherit;
+  }
+}
+.privacy li,
+.privacy p {
+  color: white;
+}

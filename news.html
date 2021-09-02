@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/favico.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/news.css">
+
+  <title>Astronomy News</title>
+
+</head>
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Galaxy Hunter Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Planets</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Solar System's Plantets</a>
+              <a class="dropdown-item" href="#">Comet</a>
+              <a class="dropdown-item" href="#">Constellation</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">News</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Bigbang Theory</a>
+              <a class="dropdown-item" href="#">Earth Evolution</a>
+              <a class="dropdown-item" href="#">Blackhole</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Solar System</a>
+              <a class="dropdown-item" href="#">Galaxies</a>
+              <a class="dropdown-item" href="#">Exoplanets</a>
+              <a class="dropdown-item" h>Space Flight</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Gallery</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Images Of The Day</a>
+              <a class="dropdown-item" href="#">Videos</a>
+              <a class="dropdown-item" href="#">Solar System 3D View</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Observatories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="navbar-btn ml-3">
+          <button class="btn btn-secondary btn-sm"><i class="fas fa-search"></i></button>
+          <button class="btn btn-secondary btn-sm"><i class="fas fa-user"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hot news -->
+<div class="container cont">
+      <div id="hot-news"> 
+        <div class="main-news column">
+        </div>
+        <div class="side-news column">
+          <div >
+            
+        </div>
+      </div>
+  </div>
+</div>
+<!-- category -->
+<div class="container cont">
+    <div class="category ">
+      <ul class="nav nav-pills justify-content-around" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="bigbang-theory-tab" data-toggle="pill" href="#bigbang-theory" role="tab" aria-controls="bigbang-theory" aria-selected="false">BigBang Theory</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="earth-evo-tab" data-toggle="pill" href="#earth-evo" role="tab" aria-controls="evolution-of-earth" aria-selected="false">Earth Evolution</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="black-holes-tab" data-toggle="pill" href="#black-holes" role="tab" aria-controls="black-holes" aria-selected="false">Black Holes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="solar-system-tab" data-toggle="pill" href="#solar-system" role="tab" aria-controls="solar-system" aria-selected="false">Solar System</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class="space-flight-tab" data-toggle="pill" href="#space-flight" role="tab" aria-controls="space-flight" aria-selected="false">Space Flight</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="galaxies-tab" data-toggle="pill" href="#galaxies" role="tab" aria-controls="galaxies" aria-selected="false">Galaxies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="exoplanets-tab" data-toggle="pill" href="#exoplanets" role="tab" aria-controls="exoplanets" aria-selected="false">Exoplanets</a>
+        </li>
+        
+      </ul>
+    </div>
+  
+    <!-- Content -->
+  <div class="content">
+    <div class="tab-content" id="pills-tabContent">
+        <!-- bigbang theory -->
+      <div class="tab-pane fade show active" id="bigbang-theory" role="tabpanel" aria-labelledby="bigbang-theory-tab">BigBang Theory</div>
+      <!-- bigbang theory -->
+      <div class="tab-pane fade" id="earth-evo" role="tabpanel" aria-labelledby="earth-evo-tab">Earth Evolution</div>
+      <!-- solar system  -->
+      <div class="tab-pane fade" id="solar-system" role="tabpanel" aria-labelledby="solar-system-tab"></div>
+    <!-- solar system -->
+    <!-- black hole  -->
+    <div class="tab-pane fade" id="black-holes" role="tabpanel" aria-labelledby="black-holes-tab">Black Holes</div>
+    <!-- black hole -->
+    <!-- space flight  -->
+      <div class="tab-pane fade" id="space-flight" role="tabpanel" aria-labelledby="space-flight-tab"></div>
+    <!-- space flight -->
+      <div class="tab-pane fade" id="galaxies" role="tabpanel" aria-labelledby="galaxies-tab">Galaxies</div>
+    <!-- space flight -->
+    <!-- exoplanets  -->
+      <div class="tab-pane fade" id="exoplanets" role="tabpanel" aria-labelledby="pills-profile-tab">Exoplanets</div>
+    <!-- exoplanets  -->
+
+    </div>
+    <!-- letter box -->
+    <div class="news-letter">
+      <div class="box">
+        <h5>FREE EMAIL NEWSLETTER</h5>
+        <span>Receive news, sky-event information, observing tips, and more from Astronomy's weekly email newsletter. View our <a href="privacyPolicy.html">Privacy Policy</a>.</span>
+        <br>
+        <b>EMAIL ADRESS:</b>
+        <form>
+          <input type="email">
+          <input type="submit" name="Submit" class="btn-submit">
+        </form>
+          
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="logo-footer"><img src="./images/logo.png" alt="logo-footer"></div>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>Planets</h5>
+            <a href="#">Mercury</a>
+            <a href="#">Venus</a>
+            <a href="#">Earth</a>
+            <a href="#">Mars</a>
+            <a href="#">Jupiter</a>
+            <a href="#">Saturn</a>
+            <a href="#">Uranus</a>
+            <a href="#">Neptune</a>
+          </div>
+          <div class="col-md-3">
+            <h5>Latest News</h5>
+            <a href="#">Bigbang theory...</a>
+            <a href="#">What is a Blackhole?</a>
+            <a href="#">Evolution of Earth</a>
+            <a href="#">The Solar System</a>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-wrap">Observatories</h5>
+            <a href="observatories.html">America</a>
+            <a href="observatories.html">Russia</a>
+            <a href="observatories.html">China</a>
+            <a href="observatories.html">Japan</a>
+            <a href="observatories.html">Inida</a>
+            <a href="observatories.html">France</a>
+          </div>
+          <div class="col-md-3">
+            <a href="login.html"><button class="btn btn-primary mb-2">Login</button></a>
+            <a href="signup.html"><button class="btn btn-light">Sign Up</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="copy">
+      <div class="row">
+        <div class="col-md-6 left-end text-left d-flex align-items-center">
+          <p>&copy; E Project SEM 1, 2021</p>
+        </div>
+        <div class="col-md-6 right-end text-right d-flex justify-content-end align-items-center">
+          <p class="mx-2">Follow us</p>
+          <p class="mx-1 fl-icon"><i class="fab fa-facebook"></i></p>
+          <p class="mx-1 fl-icon"><i class="fab fa-instagram"></i></p>
+          <p class="mx-1 fl-icon"><i class="fab fa-pinterest"></i></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="scroll-top-btn">
+  <div class="scroll-outer">
+    <i class="fas fa-arrow-up "></i>
+  </div>
+</div>
+<!-- SCRIPT -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/mainHot.js"></script>
+  <script src="./js/hotnews.js"></script>
+  <script src="./js/space.js"></script>
+  <script src="./js/solar.js"></script>
+  
+</body>
+</html>
