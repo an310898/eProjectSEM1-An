@@ -4,7 +4,6 @@ $(document).ready(function(){
     setTimeout(function(){
         $('.owl-carousel').owlCarousel({
             loop:true,
-            lazyLoad:true,
             margin:10,
             nav:true,
             responsive:{
@@ -19,6 +18,6 @@ $(document).ready(function(){
                 }
             }
         })
-    },1000)
+    },500)
     
   });
