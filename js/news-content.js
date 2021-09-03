@@ -16,6 +16,8 @@ const titleUrl = urlParams.get('id')
                 <div>
                     <h2>${x.title}</h2>
                 </div>
+                <small class="text-muted">${x.time}</small>
+
                 <div>
                     <span>${x.summary}</span>
                 </div>
@@ -187,3 +189,27 @@ const titleUrl = urlParams.get('id')
             `
         document.querySelector("#article-content").innerHTML = news
     })
+    // Carousel
+    fetch('./js/json/carousel.json')
+        .then(respond => respond.json())
+        .then(data =>{  
+            var x = data.find(x => x.title.toString() === titleUrl )
+            // console.log(x)
+            const news = `
+                    <div>
+                        <h2>${x.title}</h2>
+                    </div>
+                    <div>
+                        <span>${x.summary}</span>
+                    </div>
+                    <div class="article-img justify-content-center">
+                        <img src="${x.img}">
+                    </div>
+                    <div class="text-justify">
+                    <p >${x.summary}</p>
+                    <br><p>${x.summary} ${x.summary}</p>
+                    <br><p>${x.summary} </p>
+                    </div>
+                `
+            document.querySelector("#article-content").innerHTML = news
+        })
