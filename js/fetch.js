@@ -54,7 +54,7 @@ fetch('./js/json/mainHot.json')
     
         `
     }).join("")
-    console.log(news)
+    // console.log(news)
        
       
 
