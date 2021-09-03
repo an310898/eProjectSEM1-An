@@ -109,7 +109,9 @@
   .body p{
     text-overflow: ellipsis; 
   }
-  
+  .body h2.title{
+    margin-bottom: 3px;
+  }
   
   
   @media screen and (max-width: 991px){
