@@ -140,17 +140,14 @@
         <div class="news-letter">
           <div class="box">
             <h5>FREE EMAIL NEWSLETTER</h5>
-            <span
-              >Receive news, sky-event information, observing tips, and more
-              from Astronomy's weekly email newsletter. View our
-              <a href="privacyPolicy.html">Privacy Policy</a>.</span
-            >
-            <br />
+            <span>Receive news, sky-event information, observing tips, and more from Astronomy's weekly email newsletter. View our <a href="privacyPolicy.html">Privacy Policy</a>.</span>
+            <br>
             <b>EMAIL ADRESS:</b>
             <form>
-              <input type="email" />
-              <input href="newsContent.html" type="submit" name="Submit" class="btn-submit" />
+              <input type="email" placeholder="Email">
+              <input type="submit" value="Submit" placeholder="Email" class="btn-submit">
             </form>
+              
           </div>
         </div>
       </div>
@@ -158,7 +155,7 @@
     <!-- CONTENT -->
     <!-- CAROUSEL -->
   <div class="container cont carou">
-    <div class="owl-carousel owl-theme owl-lazy">
+    <div class="owl-carousel owl-theme">
      
   </div>
 </div>
@@ -166,15 +163,17 @@
     <!-- CAROUSEL -->
     <!-- COMMENT -->
   <div class="comment ">
-    <div class=" cont container flex-row comment-area">
+    <div class=" cont container flex-row">
       <div class="avatar">
         <img src="./images/photo-1535713875002-d1d0cf377fde.jpg" alt="">
         <p>Smith</p>
       </div>
-      <textarea class="comment-area comment-input" placeholder="Comment" oninput="autoHeight(this)"></textarea>
+      <div class="comment-area">
+        <textarea class=" comment-input" placeholder="Comment" oninput="autoHeight(this)"></textarea>
+        <button class="btn btn-submit btn-comment" type="submit" href="#">Comment</button>
+      </div>
     </div>
     <div class="container cont a">
-      <button class="btn btn-submit" type="submit" href="#">Comment</button>
     </div>
   </div>
     <!-- COMMENT -->
@@ -260,7 +259,7 @@
     <!-- SCRIPT -->
     <script>
     function autoHeight(element){
-    element.style.height='64px';
+    element.style.height='36px';
     element.style.height=element.scrollHeight+'px';
 }
     </script>
