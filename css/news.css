@@ -103,7 +103,7 @@
   .side-news .body {
     margin-left: 10px;
     color: white;
-    width: 50%;
+    width: 58%;
   }
   .tab-pane p,
   .body p{
@@ -127,7 +127,7 @@
 
 .category {
   margin-bottom: 20px;
-
+  padding-top:10px;
 }
 .tab-pane .thumb-nail {
   width: 40%;
@@ -142,26 +142,30 @@
 }
 .news-letter {
   display: flex;
-  border:1px solid white;
+  border:1px solid rgb(107, 107, 107);
   height: 286px;
   width: 230px;
   background: #000 url('https://astronomy.com/sitefiles/images/newsletter-box-bg.png')right bottom no-repeat;
-
+  border-radius: 25px;
+  margin-left:10px;
 }
 .box {
-  padding: 7px;
+  padding: 10px;
+  margin-left:5px;
 }
 .box span,b{
   color: white;
 }
 form .btn-submit{
-  margin-top: 10px;
+  margin-top: 7px;
 }
 .btn-submit {
   background-color: #217fb5;
   border: none;
   color: white;
-
+  border-radius: 20px;
+  height: 27px;
+  width: 68px;
 }
 @media screen and (max-width:768px){
   
@@ -174,9 +178,18 @@ form .btn-submit{
   .news-letter{
     width: 100%;
     height: inherit;
+    margin-left: 0;
   }
 }
 .privacy li,
 .privacy p {
   color: white;
+}
+input[type="email"]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(83, 83, 83);
+    outline: none;
+    color: white;
 }
