@@ -1,6 +1,6 @@
 // var carouselNews = new Request('./js/corousel.json')
 
-fetch('https://api.spaceflightnewsapi.net/v3/articles?_limit=8')
+fetch('./js/json/carousel.json')
     .then(respond =>respond.json())
     .then(data =>{
         const carouselData = data
@@ -9,7 +9,7 @@ fetch('https://api.spaceflightnewsapi.net/v3/articles?_limit=8')
                 <a href="newsContent.html?id=${article.title}">
                   <div class="item">
                     <div class="carousel-thumbnail">
-                    <img src="${article.imageUrl}">
+                    <img src="${article.img}">
                    </div>
                    <span>${article.title}</span>
                   </div>
