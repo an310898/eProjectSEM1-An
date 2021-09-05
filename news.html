@@ -10,7 +10,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/home.css">
-  <link rel="stylesheet" href="./css/news.css">
+  <link rel="stylesheet" href="./css/news/news.css">
 
   <title>Astronomy News</title>
 
@@ -119,23 +119,46 @@
   <div class="content">
     <div class="tab-content" id="pills-tabContent">
         <!-- bigbang theory -->
-      <div class="tab-pane fade show active" id="bigbang-theory" role="tabpanel" aria-labelledby="bigbang-theory-tab">BigBang Theory</div>
+      <div class="tab-pane fade show active" id="bigbang-theory" role="tabpanel" aria-labelledby="bigbang-theory-tab">
+        <div id="bigbang"></div>
+        <div class="more"></div>
+        <button class="loadMoreBtn"></button>
+      </div>
       <!-- bigbang theory -->
-      <div class="tab-pane fade" id="earth-evo" role="tabpanel" aria-labelledby="earth-evo-tab">Earth Evolution</div>
+      <div class="tab-pane fade" id="earth-evo" role="tabpanel" aria-labelledby="earth-evo-tab">
+        <div id="#earth"></div>
+      </div>
       <!-- solar system  -->
-      <div class="tab-pane fade" id="solar-system" role="tabpanel" aria-labelledby="solar-system-tab"></div>
-    <!-- solar system -->
+      <div class="tab-pane fade" id="solar-system" role="tabpanel" aria-labelledby="solar-system-tab">
+        <div id="solar"></div>
+        <div class="more"></div>
+        <button class="loadMoreBtn"></button>
+      </div>
     <!-- black hole  -->
-    <div class="tab-pane fade" id="black-holes" role="tabpanel" aria-labelledby="black-holes-tab">Black Holes</div>
-    <!-- black hole -->
+    <div class="tab-pane fade" id="black-holes" role="tabpanel" aria-labelledby="black-holes-tab">
+      <div id="black"></div>
+      <div class="more"></div>
+      <button class="loadMoreBtn"></button>
+    </div>
     <!-- space flight  -->
-      <div class="tab-pane fade" id="space-flight" role="tabpanel" aria-labelledby="space-flight-tab"></div>
+      <div class="tab-pane fade" id="space-flight" role="tabpanel" aria-labelledby="space-flight-tab">
+        <div id="space"></div>
+        <div class="more"></div>
+        <button class="loadMoreBtn"></button>
+      </div>
     <!-- space flight -->
-      <div class="tab-pane fade" id="galaxies" role="tabpanel" aria-labelledby="galaxies-tab">Galaxies</div>
-    <!-- space flight -->
+      <div class="tab-pane fade" id="galaxies" role="tabpanel" aria-labelledby="galaxies-tab">
+        <div id="gala"></div>
+        <div class="more"></div>
+        <button class="loadMoreBtn"></button>
+      </div>
     <!-- exoplanets  -->
-      <div class="tab-pane fade" id="exoplanets" role="tabpanel" aria-labelledby="pills-profile-tab">Exoplanets</div>
-    <!-- exoplanets  -->
+      <div class="tab-pane fade" id="exoplanets" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div id="exo"></div>
+        <div class="more"></div>
+        <button class="loadMoreBtn"></button>
+      </div>
+   
 
     </div>
     <!-- letter box -->
@@ -223,7 +246,7 @@
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/fetch.js"></script>
+  <script src="./js/news/fetch.js"></script>
   
 </body>
 </html>
